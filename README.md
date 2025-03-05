@@ -6,3 +6,5 @@ this is my work for Advanced Database Management (ITD256)
 [Algorithms to Live By notes](reading_notes.ipynb)
 
 [Library Design](library_design.ipynb)
+
+[Anatomy of an SQL Index notes](index_notes.ipynb)
