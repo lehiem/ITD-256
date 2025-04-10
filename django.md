@@ -23,4 +23,4 @@ CREATE TABLE SGA.event_approvers ( event_name VARCHAR(255), admin_email VARCHAR(
 [Models.py file](orm/db/models.py)
 
 ### ER Diagram by django
-![Django ER Diagram](django_er.png)
+![Django ER Diagram](django_diagram.png)
