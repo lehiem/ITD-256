@@ -11,7 +11,7 @@ class Attendance(models.Model):
     #attendance_id = models.IntegerField()
     date = models.DateTimeField() 
     attendance_status = models.BooleanField()
-    student_id = models.ForeignKey(student_id, on_delete=models.CASCADE) 
+    student_id = models.ForeignKey(Student, on_delete=models.CASCADE) 
 
 class Event(models.Model):
     event_name = models.CharField(max_length=30)
@@ -32,5 +32,5 @@ class Event_approver(models.Model):
     admin_email = models.EmailField()
     individual_approval_status = models.BooleanField()
     # pk = models.CompositePrimaryKey("event_name", "admin_email")
-    event_name = models.ForeignKey(event_name, on_delete=models.CASCADE) 
-    admin_email = models.ForeignKey(admin_email, on_delete=models.CASCADE) 
+    event_name = models.ForeignKey(Event, on_delete=models.CASCADE) 
+    admin_email = models.ForeignKey(Admin, on_delete=models.CASCADE) 

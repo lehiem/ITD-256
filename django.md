@@ -20,8 +20,8 @@ CREATE TABLE SGA.admin ( email VARCHAR(255) PRIMARY KEY, first_name VARCHAR(255)
 CREATE TABLE SGA.event_approvers ( event_name VARCHAR(255), admin_email VARCHAR(255), individual_approval_status BOOLEAN, PRIMARY KEY (event_name, admin_email), FOREIGN KEY (event_name) REFERENCES SGA.event(event_name) ON DELETE CASCADE, FOREIGN KEY (admin_email) REFERENCES SGA.admin(email) ON DELETE CASCADE );
 
 ### models.py file 
-[Models.py file](Desktop/orm/db/models.py)
-
+[Models.py file](sga_project.py)
+ 
 ### ER Diagram by django
 ![Django ER Diagram](django_diagram.png)
 
